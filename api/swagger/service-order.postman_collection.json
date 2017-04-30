@@ -1,0 +1,113 @@
+{
+	"variables": [],
+	"info": {
+		"name": "service-order",
+		"_postman_id": "e7504b5f-3e85-c9db-fbe5-aacef69cab18",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"url": "http://localhost:8080/api/v1/order",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"url": "http://localhost:8080/api/v1/order/590169326f80792066591047",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"url": "http://localhost:8080/api/v1/order",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\": \"DVD não lê o disco\",\n  \"client\": {\n  \t\"name\": \"Douglas Oliveira Gomes\",\n\t\"email\": \"douglasog87@gmail.com\",\n\t\"phone\": \"+55 48 9 9174 7400\",\n\t\"address\": \"Rua Anilza Leoni, 122 casa 4, quadra 30, Bairro Nova Palhoça, Palhoça/SC\"\n  },\n  \"product\": {\n  \t\"type\": \"TELEVISOR\",\n\t\"manufacturer\": \"AOC\",\n\t\"description\": \"40 pol numero de serie 1234567890\"\n  }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"url": "http://localhost:8080/api/v1/order/58f7f06d53c607337c5124b9",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"url": "http://localhost:8080/api/v1/order/58f7faaea04bd936e6626900",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"whatsapp\": \"48 0000000000\"\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "finish",
+			"request": {
+				"url": "http://localhost:8080/api/v1/order/590169326f80792066591047/finish",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
